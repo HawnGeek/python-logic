@@ -8,9 +8,28 @@
 
 #1. Declare a variable named weather and assign it a string value of 'rain'. Next create a conditional statement that will check the weather and print 'Bring an umbrella' if weather equals 'rain'.
 
+weather = 'rain'
+if(weather == 'rain'):
+  print('Bring an umbrella')
+
+
 #2 Declare a variable named score and assign it a number value of 70. Next create a conditional statement that will check the score and print 'You pass!' if the score is 70 and above and print 'Study harder!' if the score is less than 70.
 
+score = 70
+if(score >= 70):
+  print('You pass!')
+else:
+  print('Study Harder!')
+
 #3. Declare a variable named download_speed and assign it a data value of 50. Next create a conditional statement that will check the download speed and print the following based on the condition:
+
+download_speed = 50
+
+if(download_speed <= 50):
+    print('Basic Package')
+
+if(download_speed <= 50):
+    print('Basic Package')
 
 # <= 50: 'Basic Package'
 # <=100: 'Premium Package'
@@ -50,6 +69,27 @@
 #Next, create a function named bandwidth which takes a parameter usage.
 #The function will sum up the list of numbers and print the following messages based on the condition:
 
+mbps = [100,20,30,40,50]
+total = sum(mbps)
+print(total)
+
+def bandwidth(usage):
+    if sum(usage) <= 50:
+        print('Light User')
+    elif sum(usage) <= 100:
+        print('Moderate')
+    elif sum(usage) <= 150:
+        print('Multi Media')
+    else:
+        print('Heavy user')
+
+
+
+print(bandwidth(mbps))
+print(bandwidth([99,1]))
+
+
+
 #if sum <= 50: 'Light User'
 #if sum <= 100: 'Moderate User'
 #if sum <=150: 'Multi Media User'
@@ -65,10 +105,26 @@
 #11 Function largest_num
 #Create a function named largest_num which takes three parameters: num_1, num_2 and num_3.
 
+def largest_num(num_1,num_2,num_3):
+  return 'The largest number is ' + str(max(num_1,num_2,num_3))
+
+Large_num_result = largest_num(5,7,9)
+
+print(Large_num_result)
+
+
 #The function will find the largest number among any three numbers that are passed into the function. Declare a variable named large_num_result and print your results.
 
 #12 Function pos_neg
 #Create a function named pos_neg which takes a parameter num.
+
+def pos_neg(num):
+    if (num > 0):
+        return 'Postive Number'
+    else:
+        return 'Negative Number'
+
+print(pos_neg)
 
 #The function will print 'Positive Number' if the number passed in is positive, print 'Zero' if the number is 0 and print 'Negative Number' for a negative number.
 
@@ -89,5 +145,6 @@
 
 #Create a function named leap_year which takes a parameter year.
 #The function will print 'The year x is a leap year.' where x is the year value that is passed into the function and print 'The year x is not a leap year.' if it isn't a leap year.
+
 
 
